@@ -16,6 +16,7 @@
 	<properties>
 		<java.version>17</java.version>
 		<querydsl.version>5.0.0</querydsl.version>
+		<wicket.version>9.13.0</wicket.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -49,12 +50,23 @@
 			<classifier>jakarta</classifier>
 			<scope>provided</scope>
 		</dependency>
-
 		<dependency>
 			<groupId>com.querydsl</groupId>
 			<artifactId>querydsl-jpa</artifactId>
 			<classifier>jakarta</classifier>
 			<version>${querydsl.version}</version>
+		</dependency>
+
+<!--		WICKET DEPENDENCY LIST-->
+		<dependency>
+			<groupId>org.apache.wicket</groupId>
+			<artifactId>wicket-core</artifactId>
+			<version>${wicket.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.wicket</groupId>
+			<artifactId>wicket-util</artifactId>
+			<version>${wicket.version}</version>
 		</dependency>
 	</dependencies>
 
